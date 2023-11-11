@@ -3,6 +3,7 @@ package ru.job4j;
 public class Multiple {
     // оператор System.out.println применяется 11 раз
     //  полная таблица умножения на 1. От 0 до 10
+    //  есть проблемка... Во вкладке Maven красным подчёркнуты Plagins... Может, нужно их подгрузить?
     public static void main(String[] args) {
         System.out.println("1 * 0 = 0");
         System.out.println("1 * 1 = 1");
