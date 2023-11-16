@@ -19,3 +19,4 @@ public class Calculator {
         minus(2, 6);
     }
 }
+/* формальное изменение для перезагрузки на GitHub */
