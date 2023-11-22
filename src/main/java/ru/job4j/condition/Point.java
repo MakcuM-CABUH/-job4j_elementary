@@ -3,13 +3,8 @@ package ru.job4j.condition;
 public class Point {
 
     public static double distance(int x1, int y1, int x2, int y2) {
-        double a = (x1 - x2);
-        double b = (y1 - y2);
-        double aPow = Math.pow(a, 2);
-        double bPow = Math.pow(b, 2);
-        double aPlusB = aPow + bPow;
 
-        double rsl = Math.sqrt(aPlusB);
+        double rsl = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
         return rsl;
     }
 
@@ -21,6 +16,7 @@ public class Point {
 /*     ЗАДАЧА: вызов метода distance с различными аргументами
          формула расчёта расстояния между точками
          в прямоугольной системе координат:  d = √((х2 – х1)2 + (у2 – у1)2)
+
 шаг 1. Вычесть аргументы x2 и x1.
 шаг 2. Вычесть аргументы y2 и y1.
 шаг 3. Возвести в степень 2 результат операции 1. double first = Math.pow(x, 2);
