@@ -21,9 +21,9 @@ public class MathCalculator {
     }
 
     public static void main(String[] args) {
-        System.out.println("Результат расчёта \"sum+multiply\" равен " + sumAndMultiply(10, 20));
-        System.out.println("Результат расчёта \"difference+division\" равен " + difAndDiv(10, 20));
-        System.out.println("Результат расчёта \"sum+multiply+difference+division\" равен " + globalSum(10, 20));
+        System.out.println("Результат расчёта \"sum + multiply\" равен " + sumAndMultiply(10, 20));
+        System.out.println("Результат расчёта \"difference + division\" равен " + difAndDiv(10, 20));
+        System.out.println("Результат расчёта \"sum + multiply + difference + division\" равен " + globalSum(10, 20));
     }
 
 }
