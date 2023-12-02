@@ -17,7 +17,7 @@ class SqAreaTest {
     }
 
     @Test
-    void whenP8K15ThenSqArea384() {
+    void whenP8K1dot5ThenSqArea3dot84() {
         double p = 8;
         double k = 1.5;
         double expected = 3.84;
@@ -26,7 +26,7 @@ class SqAreaTest {
     }
 
     @Test
-    void whenP07K3ThenSqArea384() {
+    void whenP0dot7K3ThenSqArea0dot02() {
         double p = 0.7;
         double k = 3;
         double expected = 0.02;
