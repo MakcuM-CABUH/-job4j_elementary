@@ -131,4 +131,7 @@ class LogicNotTest {
         boolean result = LogicNot.evenOrNotPositive(num);
         assertThat(result).isFalse();
     }
+/*
+формальная правка
+ */
 }
