@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 class ChessBoardTest {
+
     @Test
     public void wayIs5() {
         int x1 = 6;
