@@ -8,9 +8,7 @@ public class Triangle {
     }
 
     public static void main(String[] args) {
-
         boolean rsl = Triangle.exist(2.0, 2.0, 2.0);
         System.out.println(rsl);
-
     }
 }
