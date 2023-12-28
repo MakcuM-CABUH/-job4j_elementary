@@ -127,3 +127,6 @@ class ChessBoardTest {
         assertThat(result).isEqualTo(expected);
     }
 }
+/*
+формальная правка
+ */
