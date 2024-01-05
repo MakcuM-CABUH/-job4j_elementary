@@ -24,3 +24,6 @@ class TriangleTest {
         assertThat(result).isFalse();
     }
 }
+/*
+формальная правка
+ */
