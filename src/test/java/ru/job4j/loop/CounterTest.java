@@ -51,6 +51,3 @@ class CounterTest {
         assertThat(sum).isEqualTo(expected);
     }
 }
-/*
-формальная правка
- */
