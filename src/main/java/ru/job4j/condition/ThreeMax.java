@@ -13,7 +13,7 @@ public class ThreeMax {
     }
 
     public static void main(String[] args) {
-        int res = ThreeMax.max(2, 12, 12);
+        int res = ThreeMax.max(11, 7, 7);
         System.out.println("Максимальное число: " + res);
     }
 }
