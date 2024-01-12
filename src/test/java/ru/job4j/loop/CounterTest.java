@@ -7,47 +7,47 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 class CounterTest {
 
     @Test
-    void from0To10sum55() {
-        int start = 0;
+    void whenSumEvenNumbersFromOneToTenThenThirty() {
+        int start = 1;
         int finish = 10;
-        int sum = Counter.sum(start, finish);
-        int expected = 55;
-        assertThat(sum).isEqualTo(expected);
+        int result = Counter.sumByEven(start, finish);
+        int expected = 30;
+        assertThat(result).isEqualTo(expected);
     }
 
     @Test
-    void from3To8sum33() {
-        int start = 3;
-        int finish = 8;
-        int sum = Counter.sum(start, finish);
-        int expected = 33;
-        assertThat(sum).isEqualTo(expected);
-    }
-
-    @Test
-    void from1To1sum1() {
+    void whenSumEvenNumbersFromOneToOneThenZero() {
         int start = 1;
         int finish = 1;
-        int sum = Counter.sum(start, finish);
-        int expected = 1;
-        assertThat(sum).isEqualTo(expected);
-    }
-
-    @Test
-    void fromMinus1To10sum54() {
-        int start = -1;
-        int finish = 10;
-        int sum = Counter.sum(start, finish);
-        int expected = 54;
-        assertThat(sum).isEqualTo(expected);
-    }
-
-    @Test
-    void from3To1sum0() {
-        int start = 3;
-        int finish = 1;
-        int sum = Counter.sum(start, finish);
+        int result = Counter.sumByEven(start, finish);
         int expected = 0;
-        assertThat(sum).isEqualTo(expected);
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void whenSumEvenNumbersFromMinusOneToFiveThenSix() {
+        int start = -1;
+        int finish = 5;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 6;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void whenSumEvenNumbersFromSixToOneThenZero() {
+        int start = 6;
+        int finish = 1;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 0;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void whenSumEvenNumbersFromMinusSixToOneThenMinusTwelve() {
+        int start = -6;
+        int finish = 1;
+        int result = Counter.sumByEven(start, finish);
+        int expected = -12;
+        assertThat(result).isEqualTo(expected);
     }
 }
