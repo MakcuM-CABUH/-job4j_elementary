@@ -41,3 +41,4 @@ public class MachineTest {
         assertThat(result).containsExactly(expected);
     }
 }
+
