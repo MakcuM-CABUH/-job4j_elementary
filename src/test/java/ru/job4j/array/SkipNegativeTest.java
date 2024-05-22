@@ -8,11 +8,11 @@ class SkipNegativeTest {
 
     @Test
     void whenArrayRowAndColumnEquals() {
-        int[][] array = {
+        int[][] ints = {
                 {1, -2},
                 {1, 2}
         };
-        int[][] result = SkipNegative.skip(array);
+        int[][] result = SkipNegative.skip(ints);
         int[][] expected = {
                 {1, 0},
                 {1, 2}
